@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlunoActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/ScrollViewId"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Cadastrar Aluno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"/>
+
+                <EditText
+                    android:id="@+id/txtNomeAluno"
+                    android:hint="@string/txtAluno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:text="Disciplinas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"/>
+
+                <EditText
+                    android:id="@+id/txtDisciplina"
+                    android:hint="@string/txtDisciplina"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"/>
+
+
+                <!--
+                <EditText
+                    android:id="@+id/txtNascimento"
+                    android:hint="@string/txtNascimento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:layout_marginTop="20dp"/>
+
+                <EditText
+                    android:id="@+id/txtEmailAluno"
+                    android:hint="@string/txtEmailAluno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textWebEmailAddress"
+                    android:layout_marginTop="20dp"/>
+
+                <EditText
+                    android:id="@+id/txtTelefoneAluno"
+                    android:hint="@string/txtTelefoneAluno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:layout_marginTop="20dp"/>
+
+
+
+                <TextView
+                    android:text="Disciplinas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkPOO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Programação Orientada a Objetos"
+                    android:layout_marginTop="20dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkMS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Modelagem de Sistemas"
+                    android:layout_marginTop="20dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkTS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Testes de Software"
+                    android:layout_marginTop="20dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkSI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sistemas Inteligentes"
+                    android:layout_marginTop="20dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkBD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Banco de Dados"
+                    android:layout_marginTop="20dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkFR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fundamentos de Redes"
+                    android:layout_marginTop="20dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkED"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Estrutura de Dados"
+                    android:layout_marginTop="20dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkAM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aplicativos Móveis"
+                    android:layout_marginTop="20dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkGP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gerência de Projetos"
+                    android:layout_marginTop="20dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkEG"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Engenharia de Softwsare"
+                    android:layout_marginTop="20dp"/>
+                    -->
+
+                <TextView
+                    android:id="@+id/txtNotas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Notas"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+
+                <TextView
+                    android:id="@+id/txtNota1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="N 1"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+
+                <EditText
+                    android:id="@+id/txtN1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+
+                <TextView
+                    android:id="@+id/txtnota2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="N 2"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+
+                <EditText
+                    android:id="@+id/txtN2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+
+                <TextView
+                    android:id="@+id/txtNota3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="N 3"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+
+                <EditText
+                    android:id="@+id/txtN3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+
+                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:columnCount="4"
+                    tools:context=".GridActivity">
+
+
+                            <Button
+                                android:id="@+id/btnConfirma"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="80dp"
+                                android:layout_marginTop="20dp"
+                                android:background="#27992B"
+                                android:textColor="#E8E9EB"
+                                android:layout_columnSpan="3"
+                                android:text="Confirma"
+                                android:onClick="btnConfirma" />
+
+                            <Button
+                                android:id="@+id/btnCancela"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginTop="20dp"
+                                android:background="#AD261D"
+                                android:textColor="#E8E9EB"
+                                android:text="Cancela"
+                                android:onClick="btnCancela" />
+                </GridLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+     </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
